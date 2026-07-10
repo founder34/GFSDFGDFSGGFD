@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Apply WL | Robinhood Witches</title>
+    <meta name="description" content="Apply for the Robinhood Witches waitlist by completing X tasks and submitting your EVM wallet.">
+    <link rel="icon" href="assets/witch-avatar.png">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="pixel-noise" aria-hidden="true"></div>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="Robinhood Witches home">
+        <img src="assets/witch-avatar.png" alt="">
+        <span>Robinhood Witches</span>
+      </a>
+      <nav class="nav-links" aria-label="Main navigation">
+        <a href="index.html#collection">Collection</a>
+        <a href="index.html#road">Road</a>
+        <a class="nav-cta" href="apply.html">Apply WL</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="application-shell">
+        <aside class="apply-panel">
+          <img src="assets/witch-avatar.png" alt="Robinhood Witches pixel avatar">
+          <p class="eyebrow">WL Application</p>
+          <h1>Earn your scroll.</h1>
+          <p>Complete the X tasks, submit your links, and drop the EVM wallet you want considered for the Robinhood Witches allowlist.</p>
+          <a class="button ghost full" href="https://x.com/RobinWitches/status/2075254643525878228" target="_blank" rel="noreferrer">Open WL Tweet</a>
+        </aside>
+
+        <section class="form-panel" aria-labelledby="form-title">
+          <div class="form-heading">
+            <p class="eyebrow">Four Tasks</p>
+            <h2 id="form-title">Waitlist Application</h2>
+          </div>
+
+          <form id="wl-form" class="wl-form">
+            <label class="task-row">
+              <span class="task-number">01</span>
+              <span class="task-content">
+                <strong>Follow @RobinWitches</strong>
+                <small>Drop your X username after following.</small>
+                <a class="go-button" href="https://x.com/RobinWitches" target="_blank" rel="noreferrer">Go</a>
+                <input name="username" type="text" placeholder="@username" autocomplete="off" required>
+              </span>
+            </label>
+
+            <label class="task-row checkbox-task">
+              <span class="task-number">02</span>
+              <span class="task-content">
+                <strong>Like + RT the WL tweet</strong>
+                <small>Use the link below, then confirm when complete.</small>
+                <a class="go-button" href="https://x.com/RobinWitches/status/2075254643525878228" target="_blank" rel="noreferrer">Go</a>
+                <span class="check-line">
+                  <input name="likedRt" type="checkbox" required>
+                  <span>I liked and reposted the tweet.</span>
+                </span>
+              </span>
+            </label>
+
+            <label class="task-row">
+              <span class="task-number">03</span>
+              <span class="task-content">
+                <strong>Comment under the tweet</strong>
+                <small>Drop the direct link to your comment.</small>
+                <a class="go-button" href="https://x.com/RobinWitches/status/2075254643525878228" target="_blank" rel="noreferrer">Go</a>
+                <input name="commentLink" type="url" placeholder="https://x.com/yourname/status/..." required>
+              </span>
+            </label>
+
+            <label class="task-row">
+              <span class="task-number">04</span>
+              <span class="task-content">
+                <strong>Drop EVM wallet</strong>
+                <small>Use the wallet you want allowlisted.</small>
+                <a class="go-button" href="https://x.com/RobinWitches/status/2075254643525878228" target="_blank" rel="noreferrer">Go</a>
+                <input name="wallet" type="text" placeholder="0x..." pattern="^0x[a-fA-F0-9]{40}$" required>
+              </span>
+            </label>
+
+            <button class="button primary submit" type="submit">Submit Application</button>
+            <p id="form-status" class="form-status" role="status" aria-live="polite"></p>
+          </form>
+        </section>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <a href="index.html">Back Home</a>
+      <span>Robinhood Witches WL</span>
+    </footer>
+
+    <div class="success-modal" id="success-modal" aria-hidden="true">
+      <div class="success-window" role="dialog" aria-modal="true" aria-labelledby="success-title">
+        <img src="assets/witch-avatar.png" alt="">
+        <p class="eyebrow">Witchlist</p>
+        <h2 id="success-title">We received your application. You're on the witchlist.</h2>
+        <button class="button primary" id="close-success" type="button">Close</button>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
